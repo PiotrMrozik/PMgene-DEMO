@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Exclude build  directories
+x64/
+Release/
+Debug/
+.vs/

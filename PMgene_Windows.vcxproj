@@ -92,7 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include;$(SolutionDir)\..\..\PMgene\Engine\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMath;C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include;$(SolutionDir)\..\..\PMgene\Engine\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMath;C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -132,7 +132,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include;$(SolutionDir)\..\..\PMgene\Engine\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMath;C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -152,7 +152,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include;$(SolutionDir)\..\..\PMgene\Engine\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Piotr Mrozik\source\repos\PMath;C:\Users\Piotr Mrozik\source\repos\PMgene\Engine\Include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -183,6 +183,9 @@
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PMath\PMath.vcxproj">
+      <Project>{ec7670d2-7f92-44fb-a9f5-8d140eced22f}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\PMgene\PMgene.vcxproj">
       <Project>{311f3ded-3b98-4f7f-8287-b96893df852a}</Project>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
