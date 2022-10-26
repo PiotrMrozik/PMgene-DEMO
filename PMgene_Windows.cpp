@@ -1,9 +1,13 @@
-
+#include <stdio.h>
+#include <io.h>
+#include <fcntl.h>
+#include <windows.h>
 #include "framework.h"
 #include "PMgene_Windows.h"
 
 #include "Engine.h"
 
+#pragma warning(disable : 4996).
 
 #define MAX_LOADSTRING 100
 
@@ -26,10 +30,16 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
+    AllocConsole();
+    freopen("conin$", "r", stdin);
+    freopen("conout$", "w", stdout);
+    freopen("conout$", "w", stderr);
+
     // TODO: Place code here.
 
     PMgene::Engine engine{};
 
+    engine.PerformGameLoopIteration();
 
     // Initialize global strings
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
